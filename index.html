@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumentationen API</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>API Dokumentationen, Johan Bergström</h1>
+    </header>
+
+    <section>
+      <h2>Rutter:</h2>
+      <br />
+
+      <ul>
+        <li><em>GET /users</em> - Returnerar alla användare.</li>
+        <li>
+          <br />
+          <em>GET /users/{id}</em> - Returnerar användaren med angivet ID ,
+          eller status 404 om användaren saknas.
+        </li>
+
+        <li>
+          <br />
+          <em>POST /users</em> - Skapa en ny användare och acceptera formaterade
+          JSON-objekt {"firstname": "", "lastname": "", "userId": "unikt namn",
+          "passwd": ""}. <code>userId</code> är obligatoriskt.
+        </li>
+        <br />
+
+        <li>
+          <em>PUT /users/:id</em> - Uppdaterar användaren med angivet ID och
+          accepterar formaterade JSON-objekt {"name": "", "password": "",
+          "email": ""}.
+        </li>
+        <br />
+      </ul>
+    </section>
+  </body>
+</html>
